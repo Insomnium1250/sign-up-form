@@ -4,11 +4,135 @@
        url('fonts/norse-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
 
-}
-*{
+/* *{
   border: solid 2px lime;
-}
+} */
+
 body {
   display:flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  height: 100vh;
+}
+
+#side-cover {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  flex: 1;
+}
+
+#side-container {
+  position: relative;
+  color: white;
+}
+
+.float {
+  position: absolute;
+  top: 15em;
+  left: 0;
+  top: 33%;
+  transform: translateY(-100%);
+  font-family: norsebold, sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img[src="images/odin-lined.png"] {
+  width: 5em;
+}
+
+#text-logo {
+  font-size: 5rem;
+}
+
+#credit {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+a {
+  color: white;
+}
+
+.form-group {
+  display:flex;
+  flex-direction: column;
+  flex: 1 1 48%;
+  min-width: 200px;
+}
+
+#user_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+button {
+  margin-top: 7%;
+  padding: 15px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #5a6c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gray {
+  background-color: #f9fafb;
+  padding-left: 5%;
+}
+
+.form-container {
+  background-color: #ffffff;
+  box-shadow: 1px;
+  padding-left: 5%;
+  background-color: white; /* Ensure the form has a background color */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Bottom-right shadow */
+  z-index: 1;
+}
+
+label {
+  font-size: smaller;
+  font-weight: 600;
+}
+
+input {
+  border-radius: 5px;
+  border: solid 1px #E5E7EB;
+  width: 250px;
+  height: 20px;
+  background-color: #fffefe;
+  padding: 3px 3px;
+}
+
+.salute {
+}
+
+h3.downward {
+  margin-top: 15%;
+}
+
+input[type="password"]:invalid {
+  border: solid 1px red;
+}
+
+input:focus {
+  border: solid 1px blue;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
